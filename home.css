@@ -185,3 +185,17 @@ html {
     font-size: 30px;
     font-family: sans-serif;
 }
+@media screen and (max-width: 800px) {
+    .container {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    .container {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

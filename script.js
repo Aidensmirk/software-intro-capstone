@@ -11,3 +11,22 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+  
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("Document loaded and ready!");
+
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank you for your message!');
+      form.reset();
+  });
+
+  const posts = document.querySelectorAll('.post');
+  posts.forEach(post => {
+      post.addEventListener('click', function() {
+          this.classList.toggle('expanded');
+      });
+  });
+});
